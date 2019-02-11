@@ -12,22 +12,23 @@ header {
   text-align: center;
 }
 header h1 {
+  font-size: 400%;
   display: inline-block;
   color: #ffffff;
   padding: 25px;
 }
+a {
+  text-decoration: none;
+}
 nav {
   text-align: center;
-  background-color: #ff0000;
-  height: 65px;
   display: inline-block;
-  vertical-align: middle;
   padding-top: 6px;
 }
-nav ul {
-  width: 20px;
+nav dl dt div {
+  width: 40px;
   height: 8px;
-  background-color: #000000;
+  background-color: #ff0000;
   margin: 6px;
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
@@ -62,17 +63,77 @@ footer a:hover {
 #section3 {
   height: 300px;
 }
+#section3 li {
+  text-decoration: none;
+  list-style: none;
+}
+/* JAVASCRIPT CSS */
+dt,
+dd {
+  font-family: sans-serif;
+  margin: 2px 0;
+}
+dt {
+  cursor: pointer;
+  font-size: 1.5em;
+}
+dt:hover {
+  color: #ffffff;
+}
+dd {
+  font-size: 1.2em;
+  vertical-align: center;
+}
+dd a {
+  display: block;
+  padding-top: 15px;
+  width: 150px;
+  height: 50px;
+  background-color: #ff0000;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+dd a:hover {
+  background-color: #000000;
+}
+dd p {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+#link1 {
+  border-bottom: 2px solid #ffffff;
+}
+#link2 {
+  border-bottom: 2px solid #ffffff;
+}
 /* TABLET */
 @media only screen and (min-width: 481px) {
-  h1 {
-    font-size: 1.2em;
+  footer a {
+    padding: 10px;
   }
 }
 /* DESKTOP */
 @media only screen and (min-width: 1025px) {
   header,
-  main,
-  footer {
+  main {
     padding: 2em;
+  }
+  header h1 {
+    font-size: 450%;
+  }
+  nav {
+    display: unset;
+    text-align: left;
+    width: 80px;
+  }
+  nav dl dt div {
+    width: 40px;
+    height: 8px;
+    margin: 6px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
   }
 }

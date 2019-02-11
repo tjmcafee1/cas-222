@@ -30,6 +30,7 @@ Programmer: Tyler McAfee
 
         <section id="section2">
             <h3>Heading 2 (h2)</h3>
+            <a href="index.html.php">Back to Top</a>
         </section>
 
         <section id="section3">
@@ -39,12 +40,14 @@ Programmer: Tyler McAfee
                 <li>List Item (li)</li>
                 <li>List Item (li)</li>
             </ul>
+            <a href="index.html.php">Back to Top</a>
         </section>
         
     </main>
 
     <?php include 'includes/footer.inc.html.php'; ?>
-    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
     
     
