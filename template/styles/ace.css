@@ -108,6 +108,9 @@ dd p {
 #link2 {
   border-bottom: 2px solid #ffffff;
 }
+#link3 {
+  border-bottom: 2px solid #ffffff;
+}
 /* TABLET */
 @media only screen and (min-width: 481px) {
   footer a {
