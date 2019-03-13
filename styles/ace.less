@@ -1,0 +1,326 @@
+/* 
+Tyler McAfee
+ace.less
+CAS222 Integrated Website Design
+Ace in the Hole Multisport Events
+*/
+
+/* MOBILE */
+
+@import 'palette.less';
+
+header {
+    background-color: @darkColor;
+    height: 125px;
+    text-align: center;
+    padding-bottom: 70px;
+    h1 {
+        font-size: 2em;
+        display: inline-block;
+        color: @lightColor;
+       // padding: 25px;
+        line-height: 1.1em;
+    }
+}
+
+a {     text-decoration: none;
+}
+
+nav {
+    text-align: center;
+    // background-color: @color1;
+    // height: 65px;
+    display: inline-block;
+    //vertical-align: middle;
+    padding-top: 6px;
+    dl dt div {
+        width: 40px;
+        height: 8px;
+        background-color: @color1;
+        margin: 6px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+    }
+}
+
+// NEW NEW NEW NEW
+
+// NEW NEW NEW NEW
+
+body {
+    font-family: sans-serif, "Times New Roman";
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: @lightColor;
+    color: @darkColor;
+    text-align: center;
+    //min-height: 100%;
+}
+
+
+footer {
+    background-color: @darkColor;
+    width: 100%;
+    min-height: 60px;
+    a {
+        text-align: center;
+        color: @lightColor;
+    }
+    a:hover {
+        color: aqua;
+    }
+    p {
+        color: #ffffff;
+        padding-top: 25px;
+    }
+}
+
+#section1 {
+    min-height: 300px;
+    clear: both;
+    img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+#section2 {
+    min-height: 700px;
+   // padding-bottom: 100px;
+}
+
+#section3 {
+    min-height: 300px;
+   // margin-top: 50px;
+    li { 
+        text-decoration: none;
+        list-style: none;
+    }
+}
+
+/* JAVASCRIPT CSS */
+
+dt, dd {
+   font-family: sans-serif;
+   margin: 2px 0;
+}
+
+dt {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+dt:hover {
+    color: @lightColor;
+}
+
+dd {
+    font-size: 1.2em;
+    vertical-align: center;
+    a {
+        display: block;
+        // float: left;
+        padding-top: 15px;
+        width: 150px;
+        height: 50px;
+        background-color: @color1;
+        text-align: center;
+        vertical-align: middle;
+        color: @lightColor;
+    }
+    a:hover {
+        background-color: @darkColor;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+    }
+}
+
+#link1 {
+    border-bottom: 2px solid @lightColor;
+}
+
+#link2 {
+    border-bottom: 2px solid @lightColor;
+}
+
+#link3 {
+    border-bottom: 2px solid @lightColor;
+}
+
+form {
+    display: inline-block;
+    border: 2px solid @darkColor;
+    border-radius: 9px;
+    padding: 8px;
+    margin: 8px;
+    input, textarea, select, label {
+        //width: 35%;
+        display: inline-block;
+        margin: 3px;
+    }
+    label {
+        float: left;
+        //  margin: 8px;
+    }
+    input, select {
+        width: 95%;
+        box-sizing: border-box;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+    }
+}
+/* JAVASCRIPT CSS END */
+
+div {
+    margin: 0 auto;
+}
+
+.galleria { 
+    max-width: 700px; 
+    height: 400px; 
+    background: #000;
+    display: none;
+}
+
+#mobiledl {
+    font-weight: bolder;
+}
+
+#mobile2 {
+    display: block;
+}
+
+.black {
+    color: @lightColor;
+    background-color: @darkColor;
+    padding: 20px 10px 25px 10px;
+    //opacity: 0.9;
+}
+
+ul {
+    list-style-type: none;
+    li {
+      //  text-align: center;
+    }
+}
+.nolist {
+    text-align: left;
+}
+
+.dtpadding {
+    padding: 15px;
+    text-decoration: underline;
+}
+
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+    nav {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        // background-color: @color1;
+        // height: 65px;
+        display: block;
+        //vertical-align: middle;
+        padding-top: 6px;
+
+        div {
+         //   display: none;
+        }
+        .noshow {
+            display: none;
+        }
+        dd {
+            font-size: 1.2em;
+            //vertical-align: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            p {
+
+                float: right;
+                margin: 0;
+                padding: 0;
+                margin-right: 2px;
+            }
+            a {
+                display: block;
+                // float: left;
+                padding-top: 15px;
+               // width: 150px;
+                height: 50px;
+                background-color: @color1;
+                text-align: center;
+                // vertical-align: middle;
+                color: @lightColor;
+            }
+            a:hover {
+                background-color: @darkColor;
+            }
+        }
+    }
+
+    #mobiledl {
+        display: none;
+    }
+
+    .galleria {
+        display: block;
+    }
+
+    #mobile2 {
+        display: none;
+    }
+
+    // this is all code while i'm trying to figure out my js ^^
+    footer {
+        p {
+            color: @lightColor;
+        }
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+    header, main {
+        padding: 2em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav {
+        display: unset;
+        text-align: left;
+        width: 80px;
+        dl dt div {
+            width: 40px;
+            height: 8px;
+            margin: 6px;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+            border-radius: 9px;
+        }
+    }
+    form {
+        width: 40%;
+    }
+
+    .nolist {
+        text-align: center;
+    }
+    #plemx-root {
+        float: right;
+    }
+}
